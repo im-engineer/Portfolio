@@ -1,5 +1,4 @@
 import React from "react";
-// import { makeStyles } from "@material-ui/core/styles";
 import { FaPlay, FaCode } from "react-icons/fa";
 import Fade from "react-reveal/Fade";
 import placeholder from "../../../assets/png/placeholder.png";
@@ -15,39 +14,6 @@ export default function SingleProject({
   image,
 })
  {
-  // const useStyles = makeStyles((t) => ({
-  //   iconBtn: {
-  //     display: "flex",
-  //     alignItems: "center",
-  //     justifyContent: "center",
-  //     width: 40,
-  //     height: 40,
-  //     borderRadius: 50,
-  //     border: `2px solid #212121`,
-  //     color: "#212121",
-  //     transition: "all 0.2s",
-  //     "&:hover": {
-  //       backgroundColor: "#EAEAEA",
-  //       color: "#3fc337",
-  //       transform: "scale(1.1)",
-  //       border: `2px solid '#EAEAEA'`,
-  //     },
-  //   },
-  //   icon: {
-  //     fontSize: "1.1rem",
-  //     transition: "all 0.2s",
-  //     "&:hover": {},
-  //   },
-  // }));
-
-  // const classes = useStyles();
-  // function getNameFromSomewhere(){
-  //     return 'LowerCase';
-  // }
-
-  // name = getNameFromSomewhere();
-  // name = name ?? '';
-
   return (
     <>
       <Fade bottom>
