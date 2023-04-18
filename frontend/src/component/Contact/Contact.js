@@ -136,7 +136,7 @@ export default function Footer() {
                 onChange={(e) => handleChange(e)}
               />
               <br />
-              <button className="btn btn-outline-success" onClick={Contact}>
+              <button className="btn btn-outline-danger" onClick={Contact}>
                 Submit
               </button>
             </form>
