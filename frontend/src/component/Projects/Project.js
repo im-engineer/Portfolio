@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { makeStyles } from '@material-ui/core/styles';
+// import { makeStyles } from '@material-ui/core/styles';
 
 import  projectsData from "../../Data/projectData"
 import { HiArrowRight } from "react-icons/hi";
@@ -10,34 +10,34 @@ import SingleProject from './SingleProject/SingleProject';
 
 function Project() {
 
-    const useStyles = makeStyles(() => ({
-        viewAllBtn : {
-            color: "white", 
-            backgroundColor: '#3fc337',
-            transition: 'color 0.2s',
-            "&:hover": {
-                color: '#EAEAEA', 
-                backgroundColor: '#3fc337',
-            }
-        },
-        viewArr : {
-            color: "#fff", 
-            backgroundColor: '#EAEAEAb3',
-            width: '40px',
-            height: '40px',
-            padding: '0.5rem',
-            fontSize: '1.05rem',
-            borderRadius: '50%',
-            cursor: 'pointer',
-            transition: 'background-color 0.2s',
-            "&:hover": {
-                color: "#ffff", 
-                backgroundColor: '#212121',
-            }
-        },
-    }));
+    // const useStyles = makeStyles(() => ({
+    //     viewAllBtn : {
+    //         color: "white", 
+    //         backgroundColor: '#3fc337',
+    //         transition: 'color 0.2s',
+    //         "&:hover": {
+    //             color: '#EAEAEA', 
+    //             backgroundColor: '#3fc337',
+    //         }
+    //     },
+    //     viewArr : {
+    //         color: "#fff", 
+    //         backgroundColor: '#EAEAEAb3',
+    //         width: '40px',
+    //         height: '40px',
+    //         padding: '0.5rem',
+    //         fontSize: '1.05rem',
+    //         borderRadius: '50%',
+    //         cursor: 'pointer',
+    //         transition: 'background-color 0.2s',
+    //         "&:hover": {
+    //             color: "#ffff", 
+    //             backgroundColor: '#212121',
+    //         }
+    //     },
+    // }));
 
-    const classes = useStyles();
+    // const classes = useStyles();
 
   return (
     <>
@@ -65,9 +65,9 @@ function Project() {
                         {projectsData.length > 3 && (
                             <div className="projects--viewAll">
                                 <Link to="/projects">
-                                    <button className={classes.viewAllBtn}>
+                                    <button className="viewAllBtn">
                                         View All
-                                        <HiArrowRight className={classes.viewArr} />
+                                        <HiArrowRight className="viewArr" />
                                     </button>
                                 </Link>
                             </div>
