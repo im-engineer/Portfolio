@@ -1,8 +1,8 @@
 const socialsData = {
     github: 'https://github.com/im-engineer',
     facebook: 'https://www.facebook.com/',
-    linkedIn: 'https://www.linkedin.com/in',
-    instagram: 'https://www.instagram.com/',
+    linkedIn: 'https://www.linkedin.com/in/siddhant-singh-9a47051a2',
+    instagram: 'https://www.instagram.com/fakir._.admi/?igshid=MTIzZWQxMDU%3D',
     codepen: 'https://codepen.io/',
     twitter: 'https://twitter.com/home',
     reddit: 'https://www.reddit.com/user/',

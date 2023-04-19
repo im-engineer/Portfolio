@@ -6,7 +6,7 @@ import {
   FaTwitter,
   FaLinkedin,
   FaGithub,
-  FaYoutube,
+  FaInstagram,
 } from "react-icons/fa";
 
 
@@ -48,12 +48,12 @@ function Landing() {
               />
             </a>
           )}
-          {socialsData.youtube && (
-            <a href={socialsData.youtube} target="_blank" rel="noreferrer">
-              <FaYoutube
+          {socialsData.instagram && (
+            <a href={socialsData.instagram} target="_blank" rel="noreferrer">
+              <FaInstagram
                 className="landing--social"
                 style={{ color: "#89ABE3FF" }}
-                aria-label="YouTube"
+                aria-label="Instagram"
               />
             </a>
           )}
