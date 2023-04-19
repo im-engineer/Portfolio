@@ -25,7 +25,7 @@ export default function SingleProject({
           <div className="projectContent">
             <h2
               id={name.replace(" ", "-").toLowerCase()}
-              style={{ color: "#89ABE3FF" }}
+              style={{ color: "#fff" }}
             >
               {name}
             </h2>
