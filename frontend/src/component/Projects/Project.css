@@ -67,18 +67,31 @@
     background-color: #EA738DFF;
     padding-left: 1.5rem;
     cursor: pointer;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 .viewAllBtn  {
     color: white; 
     background-color: #3fc337;
     transition: color 0.2s;
+    text-decoration: none;
 }
 .viewAllBtn:hover {
-        color: #EAEAEA; 
-        background-color: #3fc337;
-    }
+        color: #EA738DFF; 
+        background-color:  rgba(000,000,000,0.2);
+}
+
+.viewArr{
+    background-color: rgba(000,000,000,0.5);
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+}
+
+.viewArr:hover{
+    color: #fff;   
+    background-color: #EA738DFF; 
+}
 
 @media (min-width: 992px) and (max-width: 1380px) {
 
