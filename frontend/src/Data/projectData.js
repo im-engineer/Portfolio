@@ -11,7 +11,7 @@ const projectsData = [
     {
         id: 1,
         projectName: 'ECG',
-        projectDesc: 'This project aims to build JINGLE(music file) there provide two role user and admin, according they use their page',
+        projectDesc: 'The Goal of ECG is to provide platform for patient to submit the ecg report for the review at any time in very flexible manner to save the time of patient and provider.',
         tags: ['Angular','MongoDB','Node','Express'],
         code: 'http://ss.stagingsdei.com:9060',
         demo: 'http://ss.stagingsdei.com:9060',
@@ -20,8 +20,8 @@ const projectsData = [
     {
         id: 2,
         projectName: 'OXVirtualCare',
-        projectDesc: 'This project is a invoice management system, admin will add the user and create invoice added user, user will get mail when inoice created.',
-        tags: ['React','MongoDB','Node','Express'],
+        projectDesc: 'Ox Virtual Care give you access to the widest variety of market leading monitors, the best clinical user experience, and seamless integration with your other clinical systems.',
+        tags: ['Angular','MongoDB','Node','Express'],
         code: 'https://github.com/im-engineer/Portfolio-',
         demo: 'https://github.com/im-engineer/Portfolio-',
         image: one
