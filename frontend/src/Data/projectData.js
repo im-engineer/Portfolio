@@ -10,8 +10,8 @@ import eight from '../assets/svg/projects/eight.svg'
 const projectsData = [
     {
         id: 1,
-        projectName: 'ECG',
-        projectDesc: 'The Goal of ECG is to provide platform for patient to submit the ecg report for the review at any time in very flexible manner to save the time of patient and provider.',
+        projectName: 'EKG',
+        projectDesc: 'The Goal of EKG is to provide platform for patient to submit the ekg report for the review at any time in very flexible manner to save the time of patient and provider.',
         tags: ['Angular','MongoDB','Node','Express'],
         code: 'http://ss.stagingsdei.com:9060',
         demo: 'http://ss.stagingsdei.com:9060',
