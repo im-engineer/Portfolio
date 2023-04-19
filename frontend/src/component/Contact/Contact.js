@@ -114,7 +114,7 @@ export default function Footer() {
 
           {/* <div className="col-md-3 "></div> */}
           <div className="contacts-form">
-            <form className="form-control" onSubmit={(e) => handleSubmit(e)} style={{backgroundColor: '#89ABE3FF'}}>
+            <form className="form-control" onSubmit={(e) => handleSubmit(e)} style={{backgroundColor: '#89ABE3FF',padding:"2rem"}}>
               <input
                 className="form-control"
                 placeholder="Name"
