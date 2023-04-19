@@ -21,7 +21,7 @@ function ProjectPage() {
     return (
         <div className="projectPage" style={{backgroundColor: "#89abe3ff"}}>
             <Helmet>
-                <title>{headerData.name} | Projects</title>
+                <title>SSR_Portfolio</title>
             </Helmet>
             <div className="projectPage-header" style={{backgroundColor:"#ea738dff"}}>
                 <Link to="/">

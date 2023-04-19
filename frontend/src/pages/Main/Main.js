@@ -9,7 +9,7 @@ import Contact from '../../component/Contact/Contact'
 export default function Main() {
   return (
     <div>
-        <title>Portfolio</title>
+        <title>SSR_Portfolio</title>
         <Landing/>
         <About/>
         <Projects/>
