@@ -70,7 +70,15 @@
     text-decoration: none;
 }
 
-
+.viewAllBtn  {
+    color: white; 
+    background-color: #3fc337;
+    transition: color 0.2s;
+}
+.viewAllBtn:hover {
+        color: #EAEAEA; 
+        background-color: #3fc337;
+    }
 
 @media (min-width: 992px) and (max-width: 1380px) {
 

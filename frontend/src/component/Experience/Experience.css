@@ -65,7 +65,7 @@
     font-weight: 700;
     margin-bottom: 0.5rem;
     text-align: left;
-    margin-top: 1rem;
+    margin-left: 1rem;
 }
 
 .experience-details > h4 {
@@ -73,6 +73,8 @@
     font-size: 1.225rem;
     font-weight: 600;
     text-align: left;
+    margin-left: 1rem;
+
 }
 
 .experience-details > h5 {
@@ -80,6 +82,7 @@
     font-size: 1.15rem;
     font-weight: 600;
     text-align: left;
+    margin-left: 1rem;
 
 }
 
