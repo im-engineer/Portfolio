@@ -7,11 +7,11 @@ import { AiOutlineHome } from "react-icons/ai";
 import './Projects.css'
 import SingleProject  from '../../component/Projects/SingleProject/SingleProject';
 import  projectsData  from '../../Data/projectData'
-import  headerData  from '../../Data/headerData'
+import ProjectPlayer from '../../component/Projects/ProjectPlayer/ProjectPlayer';
 
 function ProjectPage() {
 
-    const [search, setSearch] = useState('')
+    const [search] = useState('')
 
     const filteredArticles = projectsData.filter((project) => {
         const content = project.projectName + project.projectDesc + project.tags
@@ -19,6 +19,7 @@ function ProjectPage() {
     })
 
     return (
+        <>
         <div className="projectPage" style={{backgroundColor: "#89abe3ff"}}>
             <Helmet>
                 <title>SSR_Portfolio</title>
@@ -48,6 +49,8 @@ function ProjectPage() {
                </div>
            </div>    
         </div>
+        <ProjectPlayer/>
+        </>
     )
 }
 

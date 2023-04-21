@@ -1,0 +1,58 @@
+/* ProjectPlayer.css */
+
+.projectplayers {
+    background-color: #EA738DFF;
+  }
+  
+  .projectplayers--header {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .projectplayers--bodyContainer {
+     display: grid; /* Use grid display */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Create columns with equal width */
+    gap: 1rem; /* Add gap between columns */
+    align-items: center; /* Center align items vertically */
+    justify-items: center; /* Center align items horizontally */
+  }
+  
+  .projectplayers--card {
+    width: 100%; /* Set width to 100% to take up full width of column */
+    max-width: 500px; /* Set a max-width to limit card width */
+    background-color: #89abe3ff;
+    border-radius: 5%;
+    padding: 1rem;
+  }
+  
+  .projectplayers--cardTitle {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .projectplayers--cardDescription {
+    margin-bottom: 1rem;
+  }
+  
+  .projectplayers--footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  /* Add additional styles for buttons, pagination, etc. as needed */
+  
+  .pagination-button {
+    background-color: #89abe3ff; /* Set background color */
+    color: #FFFFFF; /* Set text color */
+    margin-right: 10px; /* Set right margin */
+    border-radius: 4px; /* Set border radius */
+    cursor: pointer; /* Set cursor to pointer */
+    /* Add any other styles as needed */
+  }
+  
+  .pagination-button:disabled {
+    opacity: 0.5; /* Set opacity for disabled state */
+    cursor: default; /* Set cursor to default for disabled state */
+  }
+  
