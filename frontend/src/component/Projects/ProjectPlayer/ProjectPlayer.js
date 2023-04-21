@@ -53,6 +53,7 @@ function ProjectPlayer() {
             <button
               disabled={currentPage === 1}
               onClick={() => handlePageChange(currentPage - 1)}
+              className="pagination-button"
             >
               <i class="fa fa-angle-double-left" aria-hidden="true"></i>
             </button>
