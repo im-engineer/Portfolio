@@ -65,6 +65,8 @@
 .about-img {
     margin-top: 40px;
     pointer-events: none;
+    box-shadow: 1px 1px 50px #EA738DFF
+
 }
 
 .about-img > img {
