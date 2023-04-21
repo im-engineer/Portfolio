@@ -22,7 +22,10 @@ function ProjectPlayer() {
   return (
     <div>
       {videoData.length > 0 && (
-        <div className="projectplayers" style={{ backgroundColor: "#EA738DFF" }}>
+        <div
+          className="projectplayers"
+          style={{ backgroundColor: "#EA738DFF" }}
+        >
           <div className="projectplayers--header">
             <h1 style={{ color: "#89abe3ff" }}>Videos</h1>
           </div>
@@ -36,7 +39,12 @@ function ProjectPlayer() {
                     width="100%"
                     height="200px"
                   />
-                  <div className="projectplayers--cardTitle" style={{color:"white"}}>Project Name : {project.projectName}</div>
+                  <div
+                    className="projectplayers--cardTitle"
+                    style={{ color: "white" }}
+                  >
+                    Project Name : {project.projectName}
+                  </div>
                 </div>
               ))}
             </div>
@@ -46,7 +54,7 @@ function ProjectPlayer() {
               disabled={currentPage === 1}
               onClick={() => handlePageChange(currentPage - 1)}
             >
-              Previous
+              <i class="fa fa-angle-double-left" style={{fontSize:"24px", borderRadius:"50%"}} aria-hidden="true"></i>
             </button>
             <span>
               Page {currentPage} of {totalPages}
@@ -54,9 +62,9 @@ function ProjectPlayer() {
             <button
               disabled={currentPage === totalPages}
               onClick={() => handlePageChange(currentPage + 1)}
-              className="pagination-button" 
+              className="pagination-button"
             >
-              Next
+              <i class="fa fa-angle-double-right" style={{fontSize:"24px", borderRadius:"50%"}} aria-hidden="true"></i>
             </button>
           </div>
         </div>
