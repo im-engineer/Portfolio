@@ -10,8 +10,8 @@ const projectsData = [
         projectName: 'EKG',
         projectDesc: 'The Goal of EKG is to provide platform for patient to submit the ekg report for the review at any time in very flexible manner to save the time of patient and provider.',
         tags: ['Angular','MongoDB','Node','Express'],
-        code: 'http://ss.stagingsdei.com:9060',
-        demo: 'http://ss.stagingsdei.com:9060',
+        code: 'http://ss.stagingsdei.com:9061/patient-portal',
+        demo: 'http://ss.stagingsdei.com:9061',
         image: two
     },
     {
@@ -19,8 +19,8 @@ const projectsData = [
         projectName: 'OXVirtualCare',
         projectDesc: 'Ox Virtual Care give you access to the widest variety of market leading monitors, the best clinical user experience, and seamless integration with your other clinical systems.',
         tags: ['Angular','MongoDB','Node','Express'],
-        code: 'https://github.com/im-engineer/Portfolio-',
-        demo: 'https://github.com/im-engineer/Portfolio-',
+        code: 'http://54.201.160.69:9135/SuperAdmin/',
+        demo: 'http://54.201.160.69:9135/Frontend/',
         image: one
     },
     {
@@ -29,7 +29,7 @@ const projectsData = [
         projectDesc: 'Shopify is e-commerce website user can shop here whatever they want it is like amazon, flipkart.',
         tags: ['React','MongoDB','Node','Express'],
         code: 'https://github.com/im-engineer/shopify',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        demo: 'https://github.com/im-engineer/shopify',
         image: five
     },
     {
@@ -38,7 +38,7 @@ const projectsData = [
         projectDesc: 'A simple invoice management system',
         tags: ['React','MongoDB','Node','Express'],
         code: 'https://github.com/im-engineer/Invoice-management-system',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        demo:'https://github.com/im-engineer/Invoice-management-system',
         image: four
     },
 ];
