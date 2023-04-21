@@ -36,8 +36,7 @@ function ProjectPlayer() {
                     width="100%"
                     height="200px"
                   />
-                  <div className="projectplayers--cardTitle">{project.title}</div>
-                  <div className="projectplayers--cardDescription">{project.description}</div>
+                  <div className="projectplayers--cardTitle" style={{color:"white"}}>Project Name : {project.projectName}</div>
                 </div>
               ))}
             </div>
