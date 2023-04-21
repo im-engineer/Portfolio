@@ -54,7 +54,7 @@ function ProjectPlayer() {
               disabled={currentPage === 1}
               onClick={() => handlePageChange(currentPage - 1)}
             >
-              <i class="fa fa-angle-double-left" style={{fontSize:"24px", borderRadius:"50%"}} aria-hidden="true"></i>
+              <i class="fa fa-angle-double-left" aria-hidden="true"></i>
             </button>
             <span>
               Page {currentPage} of {totalPages}
@@ -64,7 +64,7 @@ function ProjectPlayer() {
               onClick={() => handlePageChange(currentPage + 1)}
               className="pagination-button"
             >
-              <i class="fa fa-angle-double-right" style={{fontSize:"24px", borderRadius:"50%"}} aria-hidden="true"></i>
+              <i class="fa fa-angle-double-right"  aria-hidden="true"></i>
             </button>
           </div>
         </div>

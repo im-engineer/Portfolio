@@ -49,8 +49,13 @@
     background-color: #89abe3ff; /* Set background color */
     color: #FFFFFF; /* Set text color */
     margin-right: 10px; /* Set right margin */
-    border-radius: 4px; /* Set border radius */
+    border-radius: 50%; /* Set border radius */
     cursor: pointer; /* Set cursor to pointer */
+    font-size: 24px;
+    margin-left: 10px;
+    height: 7vh;
+    width: 7vh;
+    border: #89abe3ff;
     /* Add any other styles as needed */
   }
   
