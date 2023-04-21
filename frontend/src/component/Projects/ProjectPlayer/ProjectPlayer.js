@@ -24,7 +24,7 @@ function ProjectPlayer() {
       {videoData.length > 0 && (
         <div className="projectplayers" style={{ backgroundColor: "#EA738DFF" }}>
           <div className="projectplayers--header">
-            <h1 style={{ color: "#EA738DFF" }}>Projects</h1>
+            <h1 style={{ color: "#89abe3ff" }}>Videos</h1>
           </div>
           <div className="projectplayers--body">
             <div className="projectplayers--bodyContainer">
