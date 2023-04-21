@@ -22,7 +22,7 @@
     width: 100%; /* Set width to 100% to take up full width of column */
     max-width: 500px; /* Set a max-width to limit card width */
     background-color: #89abe3ff;
-    border-radius: 5%;
+    border-radius: 2%;
     padding: 1rem;
   }
   
