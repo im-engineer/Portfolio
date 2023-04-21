@@ -15,6 +15,7 @@
     gap: 1rem; /* Add gap between columns */
     align-items: center; /* Center align items vertically */
     justify-items: center; /* Center align items horizontally */
+    margin: 1rem;
   }
   
   .projectplayers--card {
