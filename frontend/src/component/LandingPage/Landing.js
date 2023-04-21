@@ -1,7 +1,7 @@
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "./Landing.css";
 import socialsData from "../../Data/socialData";
-// import headerData from "../../Data/headerData"
+import resume from "../../assets/resume/resume .pdf"
 import { FaTwitter, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 
 function Landing() {
@@ -12,7 +12,7 @@ function Landing() {
     "Angular Developer",
     "Node Developer",
     "Frontend Developer",
-    "Backend Developer"
+    "Backend Developer",
   ];
 
   useEffect(() => {
@@ -33,7 +33,18 @@ function Landing() {
           <h1>Siddhant</h1>
         </div>
         <div className="two">
-          <h3><i class="fa-solid fa-code"></i> Web Developer <i class="fa-solid fa-code"></i><br />This is Siddhant Singh <i class="fa-solid fa-user-secret"></i><br />{developers[currentIndex]}</h3>
+          <h3>
+            <i class="fa-solid fa-code"></i> Web Developer{" "}
+            <i class="fa-solid fa-code"></i>
+            <br />
+            This is Siddhant Singh <i class="fa-solid fa-user-secret"></i>
+            <br />
+            {developers[currentIndex]}<br/>
+            <a href={resume} download>
+            <button className="resumeBtn">Download Resume</button>
+          </a>
+          </h3>
+          
         </div>
         <div className="three">
           <div className="lcl--content">
