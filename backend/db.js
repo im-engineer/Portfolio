@@ -10,4 +10,5 @@ export const getData = async() =>{
     let result = await client.connect();
     let db = result.db(database);
     let collection = db.collection('contacts');
+    console.log("🚀 ~ file: db.js:13 ~ getData ~ collection:", collection)
 }

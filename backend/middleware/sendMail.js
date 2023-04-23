@@ -1,7 +1,9 @@
 import nodemailer from 'nodemailer'
 import 'dotenv/config';
 
-var email = process.env.EMAIL;
+import {config} from '../config'
+var email = config.Email;
+console.log("🚀 ~ file: sendMail.js:6 ~ email:", email)
 
 export const SendEmail = (from, to, subject, text) => {
   var transporter = nodemailer.createTransport({
