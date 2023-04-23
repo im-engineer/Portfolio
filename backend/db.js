@@ -2,9 +2,9 @@ import mongoose from 'mongoose';
 
 var config = require('./config/config');
 
-var configdata = config.get(process.env.Node_env).db;
+var configdata = config.get(process.env.Node_env);
 import 'dotenv/config'
-var port = process.env.PORT || configdata.port
+var port = process.env.PORT || configdata.api_port
 var mongoUrl = process.env.API_Url;
 
 console.log("🚀 ~ file: db.js:10 ~ mongoUrl:", mongoUrl)

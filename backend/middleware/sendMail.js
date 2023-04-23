@@ -2,8 +2,7 @@ import nodemailer from 'nodemailer'
 import 'dotenv/config';
 
 import {get} from '../config/config'
-var email = get('staging').EMAIL;
-const path = require('path');
+var email = get('local').EMAIL;
 
 export const SendEmail = (from, to, subject, text) => {
   var transporter = nodemailer.createTransport({
