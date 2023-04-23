@@ -13,7 +13,6 @@ const config = {
             username: 'azmsiddhant1@gmail.com',
             password: 'khghxqhczbsezjtd'  
         },
-        api_port : 2345,
         client_secret_key:"thsgsjs"
     },
     staging:{
