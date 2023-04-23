@@ -2,8 +2,8 @@ import express from 'express'
 import bodyParser from 'body-parser'
 const app = express();
 import cors from 'cors'
-import {getData} from './db';
-getData();
+import {mongoconnection} from './db';
+mongoconnection();
 import contactRoute from "./router/contactRoute"
 app.use(cors({origin:"*"}));
 

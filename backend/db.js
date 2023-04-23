@@ -1,14 +1,26 @@
+import mongoose from 'mongoose';
+
+var config = require('./config/config');
+
+var configdata = config.get(process.env.Node_env).db;
 import 'dotenv/config'
+var port = process.env.PORT || configdata.port
+var mongoUrl = process.env.API_Url;
 
-import {MongoClient} from 'mongodb';
-const url = process.env.API_Url;
-const database = process.env.Database
+console.log("🚀 ~ file: db.js:10 ~ mongoUrl:", mongoUrl)
 
-const client = new MongoClient(url);
+var options= {
+    user:configdata.userName,
+    pass:configdata.password
+}
 
-export const getData = async() =>{
-    let result = await client.connect();
-    let db = result.db(database);
-    let collection = db.collection('contacts');
-    console.log("🚀 ~ file: db.js:13 ~ getData ~ collection:", collection)
+export const mongoconnection = async() => {
+    try{
+        await mongoose.connect(mongoUrl,options);
+        console.log("Connect to DB");
+    }
+    catch(e){
+        console.log(e);
+        throw e
+}
 }
