@@ -19,9 +19,11 @@ export default function Footer() {
 
   const Contact = async () => {
     const res = await contactToAdmin(input.fullname, input.email, input.textarea);
-    console.log(res.data.result, "res");
+    console.log(res.data, "res");
     if (res.data.status === true) {
       alert("message sent");
+    }else{
+      alert("failed")
     }
   };
 
