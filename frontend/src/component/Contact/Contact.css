@@ -62,7 +62,8 @@
 }
 
 .contacts-details h5{
-    padding-left: 5rem;
+    /* padding-left: 5rem; */
+    text-align: center;
 }
 
 @media (min-width: 992px) and (max-width: 1380px) {
@@ -179,7 +180,7 @@
         padding: 0rem;
     }
     .contacts-details h5{
-        padding-right: 5 rem;
+        text-align: center;    
     }
 }
 

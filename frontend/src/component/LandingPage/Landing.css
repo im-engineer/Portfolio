@@ -27,7 +27,7 @@
 .two {
   /* background-color: orange; */
   float: left;
-  height: 200px;
+  height: 60vh;
   width: 50%;
   display: flex;
   align-items: center;
@@ -143,6 +143,9 @@
     margin: 2rem;
   }
 
+  .three{
+    margin-top: 30rem;
+  }
   .lcr--content h6 {
     font-size: 1.1rem;
   }
@@ -277,10 +280,74 @@
     height: 100%;
   }
   
+  .one, .two, .three {
+    float: left;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
   .landing--img {
     --img-size: 150px;
     left: 50%;
     top: 20%;
+  }
+}
+
+/* Styles for Android mobile devices */
+@media only screen and (max-width: 767px) {
+  .one {
+    width: 100%; /* Set width to 100% for full width */
+    height: auto; /* Reset height to auto */
+    float: none; /* Reset float property */
+    display: flext; /* Reset display property */
+    padding: 10px; /* Add padding */
+    font-size: 16px; /* Adjust font size */
+    justify-content: center;
+    margin-bottom: 35rem;
+    margin-left: -0.5rem;
+  }
+  .two{
+    width: 100%; /* Set width to 100% for full width */
+    height: auto; /* Reset height to auto */
+    float: none; /* Reset float property */
+    display: block; /* Reset display property */
+    text-align: center; /* Center align text */
+    padding: 10px; /* Add padding */
+    font-size: 16px; /* Adjust font size */
+  }
+  .three {
+    width: 100%; /* Set width to 100% for full width */
+    height: auto; /* Reset height to auto */
+    float: none; /* Reset float property */
+    display: block; /* Reset display property */
+    padding: 10px; /* Add padding */
+    font-size: 16px; /* Adjust font size */
+  }
+}
+
+/* Styles for iPad tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .one, .two {
+    /* Apply styles for iPad tablets */
+    font-size: 18px; /* Adjust font size */
+  }
+    .three {
+      flex-wrap: wrap; /* Allow icons to wrap onto multiple lines on smaller screens */
+      justify-content: center; /* Center align icons on smaller screens */
+      justify-content: end;
+    }
+
+    .landing--social {
+      margin: 5px; /* Adjust margin between icons for spacing on smaller screens */
+    }
+}
+
+/* Styles for laptops */
+@media only screen and (min-width: 1024px) {
+  .one, .two, .three {
+    /* Apply styles for laptops */
+    font-size: 20px; /* Adjust font size */
   }
 }
 
