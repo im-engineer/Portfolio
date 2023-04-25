@@ -54,6 +54,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
+    /* flex: 0.6; */
     width: 50%;
     box-sizing: border-box;
     padding-left: 15rem;
@@ -61,10 +62,12 @@
 }
 
 .contacts-details h5{
+    padding-left: 5rem;
     text-align: center;
 }
 
 @media (min-width: 992px) and (max-width: 1380px) {
+
     .contacts--container {
         padding: 2rem 4rem;
         width: 90%;
@@ -87,11 +90,12 @@
     }
     .contacts-details {
         padding-left: 4rem;
+        align-items: center;
     }
-    /* .personal-details p {
-        margin-left: 1rem;
-        font-size: 1rem;
-    } */
+    .contacts-details h5{
+        padding-left: 1rem;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -160,7 +164,10 @@
         align-items: center;
         margin-top: 2rem;
     }
-
+    .contacts-details h5{
+        /* text-align: center;    */
+        /* padding-left: 3rem;  */
+    }
     
     .submit-btn{align-self: center;}
 }
@@ -172,7 +179,8 @@
         padding: 0rem;
     }
     .contacts-details h5{
-        text-align: center;    
+        text-align: center;   
+        padding-left: 3rem; 
     }
 }
 
