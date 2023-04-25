@@ -7,7 +7,6 @@ export default function Footer() {
     email: "",
     textarea: "",
   });
-  console.log(input);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -16,14 +15,20 @@ export default function Footer() {
       [name]: value,
     }));
   };
-
   const Contact = async () => {
-    const res = await contactToAdmin(input.fullname, input.email, input.textarea);
-    console.log(res.data, "res");
-    if (res.data.status === true) {
-      alert("message sent");
-    }else{
-      alert("failed")
+    const { fullname, email, textarea } = input;
+    console.log("🚀 ~ file: Contact.js:21 ~ Contact ~ input:", input)
+    try {
+      const res = await contactToAdmin(fullname, email, textarea);
+      console.log("🚀 ~ file: Contact.js:23 ~ Contact ~ res:", res)
+      if (res.data.status === true) {
+        alert("Message sent");
+      } else {
+        alert("Failed");
+      }
+    } catch (error) {
+      console.error("Error sending message: ", error);
+      alert("Failed to send message");
     }
   };
 

@@ -11,6 +11,7 @@ const API_URL = "https://ssrportfolio.onrender.com/";
 
 //-------------------------->>>>>> User Register <<<<<<--------------------------
 export const contactToAdmin = async (fullname,email,textarea) => {
+    console.log("🚀 ~ file: service.js:14 ~ contactToAdmin ~ fullname:", fullname)
     return await axios.post(API_URL + "contact/to/admin", {fullname,email,textarea}, axiosConfig)
 
 }
