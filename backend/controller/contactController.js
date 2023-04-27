@@ -4,7 +4,7 @@ import { SendEmail } from "../middleware/sendMail";
 
 //-------------------------->>>>>> Contact to Admin <<<<<<--------------------------
 export const contact = async (req, res) => {
-  // try {
+  try {
     console.log("jj")
     const contactDetails = new Contact({
       fullname:req.body.fullname,
@@ -30,11 +30,28 @@ export const contact = async (req, res) => {
       result: contactData,
       data:emailDetails
     })};
-  // } catch (e) {
-  //   res.send({
-  //     status: false,
-  //     message: "again u make a mistake",
-  //     result: e,
-  //   });
-  // }
+  } catch (e) {
+    res.send({
+      status: false,
+      message: "again u make a mistake",
+      result: e,
+    });
+  }
 };
+
+export const getAllContacts = async (req, res) => {
+  try {
+    const contacts = await Contact.find();
+    res.send({
+      status: true,
+      message: "Contacts retrieved successfully",
+      data: contacts
+    });
+  } catch (error) {
+    res.send({
+      status: false,
+      message: "Error retrieving contacts",
+      error: error
+    });
+  }
+}
