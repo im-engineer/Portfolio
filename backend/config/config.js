@@ -37,7 +37,12 @@ const config = {
             databaseName:"admin",
             userName:"azmsiddhant1",
             password:"c8ycaWLAjBIO2yc8"
-        }
+        },EMAIL:{
+            host:'smtp.gmail.com',
+            port:465,
+            username: 'azmsiddhant1@gmail.com',
+            password: 'khghxqhczbsezjtd'  
+        },api_port:2345
     }
 }
 export const get = function get(env){
