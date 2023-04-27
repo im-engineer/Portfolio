@@ -8,6 +8,7 @@ let axiosConfig = {
     }
 }
 const API_URL = "https://ssrportfolio.onrender.com/";
+// const API_URL = "https://localhost:2345/"
 
 //-------------------------->>>>>> User Register <<<<<<--------------------------
 export const contactToAdmin = async (fullname,email,textarea) => {

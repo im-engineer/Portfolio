@@ -280,7 +280,13 @@
     height: 100%;
   }
   
-  .one, .two, .three {
+  .one {
+    float: left;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .two, .three {
     float: left;
     width: 100%;
     height: auto;
@@ -300,11 +306,11 @@
     width: 100%; /* Set width to 100% for full width */
     height: auto; /* Reset height to auto */
     float: none; /* Reset float property */
-    display: flext; /* Reset display property */
+    display: flex; /* Reset display property */
     padding: 10px; /* Add padding */
     font-size: 16px; /* Adjust font size */
     justify-content: center;
-    margin-bottom: 35rem;
+    margin-bottom: 40rem;
     margin-left: -0.5rem;
   }
   .two{
@@ -315,6 +321,7 @@
     text-align: center; /* Center align text */
     padding: 10px; /* Add padding */
     font-size: 16px; /* Adjust font size */
+
   }
   .three {
     width: 100%; /* Set width to 100% for full width */
@@ -323,6 +330,7 @@
     display: block; /* Reset display property */
     padding: 10px; /* Add padding */
     font-size: 16px; /* Adjust font size */
+
   }
 }
 
