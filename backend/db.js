@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 
 import 'dotenv/config'
-var mongoUrl = process.env.API_Url;
+var mongoUrl = "mongodb://localhost:27017/siddhant";
 
 console.log("🚀 ~ file: db.js:10 ~ mongoUrl:", mongoUrl)
 
