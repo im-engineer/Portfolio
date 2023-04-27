@@ -29,6 +29,15 @@ const config = {
             username: 'azmsiddhant1@gmail.com',
             password: 'khghxqhczbsezjtd'  
         },api_port:9898
+    },
+    production : {
+        db :{
+            host:"portfolio.vvtk3gi.mongodb.net",
+            port:"27017",
+            databaseName:"admin",
+            userName:"azmsiddhant1",
+            password:"c8ycaWLAjBIO2yc8"
+        }
     }
 }
 export const get = function get(env){
