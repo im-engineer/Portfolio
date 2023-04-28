@@ -34,7 +34,7 @@ const config = {
         db :{
             host:"portfolio.vvtk3gi.mongodb.net",
             port:"27017",
-            databaseName:"admin",
+            databaseName:"contacts",
             userName:"azmsiddhant1",
             password:"c8ycaWLAjBIO2yc8"
         },api_port:2345
