@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { contactToAdmin } from "../../service/service";
 import './Contact.css'
 export default function Footer() {
@@ -32,8 +32,13 @@ export default function Footer() {
     }
   };
 
+  const formRef = useRef(null);
+
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    formRef.current.reset();
+
   };
 
   return (
@@ -121,7 +126,7 @@ export default function Footer() {
 
           {/* <div className="col-md-3 "></div> */}
           <div className="contacts-form">
-            <form className="form-control" onSubmit={(e) => handleSubmit(e)} style={{backgroundColor: '#89ABE3FF',padding:"2rem"}}>
+            <form ref={formRef} className="form-control" onSubmit={(e) => handleSubmit(e)} style={{backgroundColor: '#89ABE3FF',padding:"2rem"}}>
               <input
                 className="form-control"
                 placeholder="Name"
