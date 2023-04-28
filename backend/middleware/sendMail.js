@@ -1,28 +1,35 @@
-import nodemailer from 'nodemailer'
-import 'dotenv/config';
+import nodemailer from "nodemailer";
 
-import {get} from '../config/config'
-var email = get('local').EMAIL;
-
-export const SendEmail = (from, to, subject, text) => {
-  var transporter = nodemailer.createTransport({
-    service: "gmail",
+export const SendEmail = async (from, to, subject, text, delay = 5000) => {
+  // Set up transporter object
+  const transporter = nodemailer.createTransport({
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true,
     auth: {
-      user: email.username,
-      pass: email.password,
+      user: "awasthisameer150@gmail.com",
+      pass: "ighskzhukejwjbdt",
     },
   });
-  var mailOptions = {
-    from: from,
-    to: to,
-    subject: subject,
-    html: text,
+
+  // Set email options
+  const mailOptions = {
+    from,
+    to,
+    subject,
+    text,
   };
-  transporter.sendMail(mailOptions, function (error, info) {
-    if (error) {
-      console.log(error);
-    } else {
-      console.log("Email sent: " + info.response);
-    }
-  });
+
+  // Send email with delay between each email
+  try {
+    await new Promise((resolve) => setTimeout(resolve, delay));
+    const info = await transporter.sendMail(mailOptions);
+    console.log("Email sent: " + info.response);
+    return info;
+  } catch (error) {
+    console.log(error);
+    throw new Error("Failed to send email");
+  }
 };
+
+// ighskzhukejwjbdt
