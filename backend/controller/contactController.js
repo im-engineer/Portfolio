@@ -1,9 +1,6 @@
 import mongoose from "mongoose";
 import Contact from "../model/contactModel";
 import { SendEmail } from "../middleware/sendMail";
-mongoose.set("bufferCommands", false); // disable command buffering
-mongoose.set("connectTimeoutMS", 30000); // set connection timeout to 30 seconds
-mongoose.set("socketTimeoutMS", 45000); // set socket timeout to 45 seconds
 
 
 //-------------------------->>>>>> Contact to Admin <<<<<<--------------------------
