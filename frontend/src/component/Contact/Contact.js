@@ -162,7 +162,6 @@ export default function Footer() {
           </div>
           </div>
           
-          {/* <div className="col-md-3"></div> */}
         </div>
       </footer>
     </div>
