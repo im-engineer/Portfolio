@@ -34,6 +34,10 @@ const config = {
         db :{
             host:"portfolio.vvtk3gi.mongodb.net",
             port:"27017",
+            MOONGOOSE : {
+              useUndefinedTopology:true,
+              useNewUrlParser: true,  
+            },
             databaseName:"contacts",
             userName:"azmsiddhant1",
             password:"c8ycaWLAjBIO2yc8"
