@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import { contactToAdmin } from "../../service/service";
-import './Contact.css'
+import "./Contact.css";
 export default function Footer() {
   const [input, setInput] = useState({
     fullname: "",
@@ -17,10 +17,10 @@ export default function Footer() {
   };
   const Contact = async () => {
     const { fullname, email, textarea } = input;
-    console.log("🚀 ~ file: Contact.js:21 ~ Contact ~ input:", input)
+    console.log("🚀 ~ file: Contact.js:21 ~ Contact ~ input:", input);
     try {
       const res = await contactToAdmin(fullname, email, textarea);
-      console.log("🚀 ~ file: Contact.js:23 ~ Contact ~ res:", res)
+      console.log("🚀 ~ file: Contact.js:23 ~ Contact ~ res:", res);
       if (res.data.status === true) {
         alert("Message sent");
       } else {
@@ -38,7 +38,6 @@ export default function Footer() {
     e.preventDefault();
 
     formRef.current.reset();
-
   };
 
   return (
@@ -118,50 +117,108 @@ export default function Footer() {
           {/* <!-- Section: Social media --> */}
         </div>
         {/* <!-- Grid container --> */}
-
+        <div className="container">
+          <div className="row">
+            <div
+              className="col-md-4"
+              style={{
+                backgroundColor: "#89ABE3FF",
+                padding: "0.5rem",
+                borderRadius: "10px",
+              }}
+            >
+              <h4>
+                {" "}
+                <i
+                  className="fab fa-google"
+                  style={{
+                    backgroundColor: "#EA738DFF",
+                    padding: "0.5rem",
+                    borderRadius: "50%",
+                  }}
+                >
+                  {" "}
+                </i>
+                &nbsp; Contact through email
+              </h4>
+              <h5 style={{ paddingLeft: "2.3rem" }}>azmsiddhant1@gmail.com</h5>
+            </div>
+            <div className="col-md-2"></div>
+            <div
+              className="col-md-4"
+              style={{
+                backgroundColor: "#89ABE3FF",
+                padding: "0.5rem",
+                borderRadius: "10px",
+                float:"right"
+              }}
+            >
+              <h4>
+                {" "}
+                <i
+                  className="fa fa-phone"
+                  style={{
+                    backgroundColor: "#EA738DFF",
+                    padding: "0.5rem",
+                    borderRadius: "50%",
+                  }}
+                >
+                  {" "}
+                </i>
+                &nbsp; Call me
+              </h4>
+              <h5 style={{ paddingLeft: "2.3rem" }}>+91 6306654563</h5>
+            </div>{" "}
+          </div>
+        </div>
         {/* Contact Us */}
         <div className="contacts--container">
-        <h1>Contacts</h1>
-        <div className='contacts-body '>
-
-          {/* <div className="col-md-3 "></div> */}
-          <div className="contacts-form">
-            <form ref={formRef} className="form-control" onSubmit={(e) => handleSubmit(e)} style={{backgroundColor: '#89ABE3FF',padding:"2rem"}}>
-              <input
+          <h1>Contacts</h1>
+          <div className="contacts-body ">
+            {/* <div className="col-md-3 "></div> */}
+            <div className="contacts-form">
+              <form
+                ref={formRef}
                 className="form-control"
-                placeholder="Name"
-                name="fullname"
-                onChange={(e) => handleChange(e)}
-              />
-              <br />
-              <input
-                className="form-control"
-                placeholder="Email"
-                name="email"
-                onChange={(e) => handleChange(e)}
-              />
-              <br />
-              <textarea
-                className="form-control"
-                placeholder="Enter Your text here..."
-                name="textarea"
-                onChange={(e) => handleChange(e)}
-              />
-              <br />
-              <button className="btn btn-outline-danger" onClick={Contact}>
-                Submit
-              </button>
-            </form>
+                onSubmit={(e) => handleSubmit(e)}
+                style={{ backgroundColor: "#89ABE3FF", padding: "2rem" }}
+              >
+                <input
+                  className="form-control"
+                  placeholder="Name"
+                  name="fullname"
+                  onChange={(e) => handleChange(e)}
+                />
+                <br />
+                <input
+                  className="form-control"
+                  placeholder="Email"
+                  name="email"
+                  onChange={(e) => handleChange(e)}
+                />
+                <br />
+                <textarea
+                  className="form-control"
+                  placeholder="Enter Your text here..."
+                  name="textarea"
+                  onChange={(e) => handleChange(e)}
+                />
+                <br />
+                <button className="btn btn-outline-danger" onClick={Contact}>
+                  Submit
+                </button>
+              </form>
+            </div>
+            <div></div>
+            <div className="contacts-details " style={{ color: "black" }}>
+              <h5>About Me</h5>
+              <p>
+                Siddhant Singh Rajpoot <br /> MEARN Full Stack Developer at{" "}
+                <br /> SmartData Enterprises Limited,(CMMI level3) <br />{" "}
+                Nagpur,Mihan,441108
+              </p>
+            </div>
           </div>
-          <div></div>
-          <div className="contacts-details " style={{ color: "black" }}>
-            <h5>About Me</h5>
-            <p>
-              Siddhant Singh Rajpoot <br /> MEARN Full Stack Developer at <br /> SmartData Enterprises Limited,(CMMI level3) <br /> Nagpur,Mihan,441108
-            </p>
-          </div>
-          </div>
-          
         </div>
       </footer>
     </div>
