@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Landing.css";
 import socialsData from "../../Data/socialData";
-import resume from "../../assets/resume/resume .pdf"
+import resume from "../../assets/resume/ssrresume.pdf"
 import { FaTwitter, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 
 function Landing() {
